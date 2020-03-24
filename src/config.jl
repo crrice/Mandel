@@ -10,7 +10,7 @@ const BASIC_FCONFIG = Dict(
 	"func" => (z, c) -> z^2 + c,
 
 	"color" => phasedColorLoop(BASIC_PCL),
-	"path" => "fractal.bmp",
+	"name" => "fractal.bmp",
 )
 
 const TEST_FCONFIG = Dict(
@@ -24,7 +24,7 @@ const TEST_FCONFIG = Dict(
 	"func" => (z, c) -> z^2 + c,
 
 	"color" => phasedColorLoop(BASIC_PCL),
-	"path" => "test2.bmp",
+	"name" => "test2.bmp",
 )
 
 export BASIC_FCONFIG

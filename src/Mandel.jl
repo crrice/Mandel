@@ -12,7 +12,7 @@ fractus(cfg :: typeof(BASIC_FCONFIG)) = (
 		.|> cfg["color"](cfg["iters"])
 		 |> transpose
 		 |> f -> reverse(f, dims=1)
-		 |> f -> Images.save(cfg["path"], f)
+		 |> f -> Images.save(string("./images/", cfg["name"]), f)
 )
 
 export fractus
