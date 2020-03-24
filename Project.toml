@@ -1,0 +1,7 @@
+name = "Mandel"
+uuid = "b1386058-6f43-4f93-94f4-6d765f5017e1"
+authors = ["Conor Rice <conorrice91@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Images = "916415d5-f1e6-5110-898d-aaa5f9f070e0"
