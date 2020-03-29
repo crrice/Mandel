@@ -29,3 +29,25 @@ const TEST_FCONFIG = Dict(
 
 export BASIC_FCONFIG
 export TEST_FCONFIG
+
+# Config Parametrics
+
+parameterizeConfigByFrame(cfg1, cfg2, frames) = begin
+    blΔ = cfg2["bl"] - cfg1["bl"]
+    blPara(frame) = cfg1["bl"] + (frame/frames)*blΔ
+
+    wΔ = cfg2["w"] - cfg1["w"]
+    wPara(frame) = cfg1["w"] + (frame/frames)*wΔ
+
+    cfg_frame = copy(cfg1)
+    cfgPara(frame) = begin
+        cfg_frame["bl"] = blPara(frame)
+        cfg_frame["w"] = wPara(frame)
+
+        # How to calculate the iters...
+        # Maybe leave that up to the caller...
+   		cfg_frame
+    end
+end
+
+export parameterizeConfigByFrame

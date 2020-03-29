@@ -1,6 +1,4 @@
 
-import Images
-
 # The most basic of coloring functions...
 # All coloring functions should have this type.
 monocolor(iters) = n -> (n == iters + 1
