@@ -34,7 +34,7 @@ fractus(cfg1, cfg2, duration, fps) = begin
 
 	frame = 1
 	render(t, dt) = begin
-		println("Starting frame ", frame)
+		# println("Starting frame ", frame)
 		data = fractusNoSave(cfgPara(frame))
 		frame += 1
 		data
