@@ -1,10 +1,10 @@
 
 const BASIC_FCONFIG = Dict(
-	"bl" => -3 -1im,
-	"w" => 4.0,
+	"bl" => -2 -1im,
+	"w" => 3.0,
 
-	"resw" => 1400,
-	"resh" => 700,
+	"resw" => 2100,
+	"resh" => 1400,
 
 	"iters" => 1000,
 	"func" => (z, c) -> z^2 + c,
